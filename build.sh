@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t owncloud .
+docker build -t bdereims/owncloud .

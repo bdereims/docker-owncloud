@@ -22,8 +22,8 @@ ADD ./openssl.cnf /etc/apache2/ssl/openssl.cnf
 RUN openssl req -new -x509 -config /etc/apache2/ssl/openssl.cnf -days 1095 -newkey rsa:2048 -nodes -out /etc/apache2/ssl/owncloud.crt -keyout /etc/apache2/ssl/owncloud.key
 
 # [Optional] Keep the owncloud config
-ADD ./config.php /var/www/owncloud/config/config.php
-RUN chown www-data:www-data /var/www/owncloud/config/config.php
+#ADD ./config.php /var/www/owncloud/config/config.php
+#RUN chown www-data:www-data /var/www/owncloud/config/config.php
 
 ADD ./startup.sh /opt/startup.sh
 
